@@ -1,13 +1,699 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+:root {
+	--pink: #fed2cf;
+	--yellow: #f2d184;
+	/* --heading-text: 'Abril Fatface', cursive; */
+	--heading-text: 'Playfair Display', serif;
+	/* --body-text: 'Major Mono Display', monospace; */
+	/* --body-text: 'IBM Plex Mono', monospace; */
+	/* --body-text: 'MuseoModerno', cursive; */
+	--body-text: 'Syncopate', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--body-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--heading-text);
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	width: 95%;
+	max-width: 1425px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* NAVIGATION */
+#navbar {
+	background-color: var(--pink);
+	height: 70px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	padding: 0 2.5rem;
+}
+
+#navbar.faded-header {
+	background-color: #ffcbc8;
+	transition: all 0.4s ease-in-out;
+}
+
+.logo {
+	line-height: 1.4em;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+#navbar > ul {
+	display: flex;
+	list-style: none;
+}
+
+#navbar ul li {
+	padding-left: 1rem;
+}
+
+#navbar ul li a {
+	font-family: var(--body-text);
+	color: #000;
+	padding: 1.2rem 0;
+	margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+	color: #fff;
+}
+
+/* Hide .overlay-wrap */
+.overlay-wrap {
+	display: none;
+}
+
+.current {
+	background-repeat: repeat-x;
+	background-image: linear-gradient(to right, currentColor 100%, currentColor 0);
+	background-size: 1px 1px;
+	background-position: 0 calc(100% - 0.8em);
+}
+
+/* HERO SECTION */
+.hero {
+	height: 100vh;
+	padding: 0 3rem;
+	background-color: var(--pink);
+	position: relative;
+}
+
+.hero h1 {
+	position: absolute;
+	bottom: 100px;
+	font-size: 3em;
+	letter-spacing: .8em;
+	z-index: 3;
+}
+
+.txt-type > .txt {
+	border-right: 0.2rem solid red;
+}
+
+.shape {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transition: all 1s;
+}
+
+.crc-pink {
+	bottom: 120px;
+	right: 350px;
+	background-color: #fcdee3;
+	border-radius: 50%;
+}
+
+.box-blue {
+	bottom: 200px;
+	right: 400px;
+	background-color: #2a14f2;
+}
+
+.box-grey {
+	top: 100px;
+	right: 183px;
+	background-color: #666;
+	z-index: 1;
+}
+
+.line {
+	position: absolute;
+	height: 100vh;
+	width: 2px;
+	background-color: red;
+}
+
+.line-1 {
+	top: 50px;
+	right: 250px;
+}
+
+.line-2 {
+	top: 50px;
+	right: 225px;
+}
+
+.line-3 {
+	top: 50px;
+	right: 200px;
+}
+
+.line-4 {
+	top: 50px;
+	right: 175px;
+}
+
+.line-5 {
+	top: 50px;
+	right: 150px;
+}
+
+/* ABOUT */
+
+#about {
+	height: 70vh;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.abt-title {
+	font-size: 4rem;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	margin-right: 30%;
+}
+
+.abt-content {
+	flex: 1;
+}
+
+.abt-content p {
+	font-family: var(--body-text);
+	width: 70%;
+	text-align: right;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+/* WORK */
+
+.work-heading {
+	text-align: right;
+	margin: 2.5rem 2.5rem 0 0;
+}
+
+/* make sure internal link scroll displays section heading */
+#work-heading::before {
+	display: block;
+	content: " ";
+	margin-top: -100px;
+	height: 100px;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+/* Homepage grid-items */
+.grid-item {
+	color: #fff;
+	position: relative;
+	margin: 2.5rem;
+	width: calc(50% - 5rem);
+}
+
+.rsp-image {
+	display: block;
+	width: 100%;
+	/* height: 250px; */
+}
+
+.project-meta {
+	color: #4d4d4d;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	/* font-family: var(--heading-text); */
+	font-size: .8rem;
+}
+
+.project-meta * {
+	flex: 1 1 30%;
+}
+
+.project-meta h3 {
+	text-align: left;
+}
+
+.project-meta a {
+	margin-right: 4rem;
+}
+
+.project-meta a,
+.project-meta span {
+	text-align: right;
+}
+
+.project-meta i.fab {
+	font-size: 2rem;
+	transition: color .2s;
+}
+
+.project-meta i.fab:hover {
+	color: var(--pink);
+}
+
+/* absolutely positioned child element placed on top of parent .grid-item (positioned relative) with transparent bg-color */
+.grid-item-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: .5s ease;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.grid-item .grid-item-text h2 {
+	color: #fff;
+	font-family: Archivo Black;
+	font-weight: 500;
+	line-height: 1.4em;
+	font-size: 2.2rem;
+}
+
+.grid-item:hover .grid-item-overlay,
+.grid-item:hover .grid-item-text {
+	opacity: 0;
+	transition: opacity ease 200ms;
+}
+
+.hover-skew {
+	transition: all .3s;
+}
+
+.hover-skew:hover {
+	transform: skew(2deg, -5deg);
+}
+
+/* CONTACT */
+#contact {
+	background-color: #000000;
+	border: 20px solid var(--pink);
+	padding: 4rem;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	line-height: 1.7;
+}
+
+.contact-info > * {
+	flex: 1;
+}
+
+.contact-info-content {
+	color: var(--pink);
+}
+
+.contact-info h2,
+.contact-info h3 {
+	color: #ffffff;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.contact-info-content a {
+	color: var(--pink);
+}
+
+#contact .social-links {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem auto 0 auto;
+	font-size: 6rem;
+}
+
+#contact .social-links li {
+	width: 50%;
+}
+
+#contact .social-links li i,
+#contact .social-links li img {
+	transition: transform .3s;
+}
+
+#contact .social-links li i:hover,
+#contact .social-links li img:hover {
+	transform: scale(1.3);
+}
+
+#contact .social-links img {
+	width: 6rem;
+	height: 6rem;
+	padding-top: 1rem;
+	padding-right: .6rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	border: 5px solid var(--pink);
+	display: block;
+	padding: 7px 15px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	background-color: rgba(255, 255, 255, 1);
+	outline: none;
+}
+
+.contact-form button {
+	color: #fff;
+	background: var(--pink);
+	border: none;
+	text-align: center;
+	padding: 1rem;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	font-family: var(--body-text);
+}
+
+.contact-form button:hover {
+	color: var(--pink);
+	background: #fff;
+	transition: all .2s;
+}
+
+.contact-form label {
+	color: #fff;
+}
+
+/* Contact Style End */
+
+/* MOBILE STYLES */
+/* NAVIGATION */
+
+@media screen and (max-width: 768px) {
+	#navbar {
+		padding: 0;
+	}
+
+	#navbar ul.nav-items {
+		display: none;
+	}
+
+	.logo {
+		font-size: 1.2rem;
+		margin-left: 2rem;
+	}
+
+	.overlay-wrap {
+		display: block;
+	}
+
+	/* we are using the checkbox to make use of its state functionality that we can grab onto with css instead of having to use js */
+
+	.overlay-wrap .toggler {
+		position: absolute;
+		top: 0.4rem;
+		right: 1.8rem;
+		/* checkbox will be on top but invisible */
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		/* make the checkbox invisible */
+		opacity: 0;
+	}
+
+	/* hamburger wrapper */
+	.overlay-wrap .hamburger {
+		position: absolute;
+		top: 0;
+		right: 1.5rem;
+		/* postion hamburger under the checkbox */
+		z-index: 1;
+		width: 60px;
+		height: 60px;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* Hamburger Line */
+	.overlay-wrap .hamburger > div {
+		/* position this so top and bottom lines can be positioned absolutely with respect */
+		position: relative;
+		flex: none;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* animate hamburger line rotation */
+		transition: all 0.4s ease;
+	}
+
+	/* Hamburger Lines - Top & Bottom */
+	.overlay-wrap .hamburger > div::before,
+	.overlay-wrap .hamburger > div::after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		top: -10px;
+		width: 100%;
+		height: 1px;
+		background: #000;
+	}
+
+	/* moves ::after line down to become bottom line */
+	.overlay-wrap .hamburger > div::after {
+		top: 10px;
+	}
+
+	.overlay-wrap .toggler:checked + .hamburger > div {
+		transform: rotate(135deg);
+		/* show center line for X */
+		background: #000;
+		height: 1px;
+	}
+
+	/* Turns Lines Into X */
+	.overlay-wrap .toggler:checked + .hamburger > div:before,
+	.overlay-wrap .toggler:checked + .hamburger > div:after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
+	/* Rotate On Hover When Checked */
+	.overlay-wrap .toggler:checked:hover + .hamburger > div {
+		transform: rotate(225deg);
+	}
+
+	/* HIDE MENU */
+
+	/* Initially menu is hidden */
+	.overlay-wrap .menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.overlay-wrap .menu > div {
+		position: absolute;
+		background: #fff;
+		top: 70px;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s ease;
+		color: #000;
+	}
+
+	.overlay-wrap .menu > div > div {
+		top: 100px;
+		text-align: center;
+		max-width: 90vw;
+		max-height: 100vh;
+		opacity: 0;
+		transition: opacity 0.4s ease, transform 0.4s ease;
+	}
+
+	/* SHOW MENU WHEN TOGGLER IS CHECKED */
+	.overlay-wrap .toggler:checked ~ .menu {
+		visibility: visible;
+	}
+
+	.overlay-wrap .toggler:checked ~ .menu > div {
+		transition-duration: var(--menu-speed);
+	}
+
+	.overlay-wrap .toggler:checked ~ .menu > div > div {
+		opacity: 1;
+		transform: translateY(-50px);
+	}
+
+	/* MENU STYLES */
+
+	.overlay-wrap .menu > div > div > ul > li {
+		list-style: none;
+		color: #000;
+		font-size: 2.5rem;
+		padding: 0.5rem;
+	}
+
+	.overlay-wrap .menu > div > div > ul > li > a {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.4s ease;
+	}
+
+	.overlay-wrap .menu > div > div > ul > li > a:hover {
+		color: var(--secondary-color);
+	}
+
+	/* WORK */
+	.grid {
+		display: block;
+	}
+
+	.grid-item {
+		margin: 2rem;
+		width: calc(100% - 4rem);
+	}
+
+	/* HERO */
+	.hero {
+		height: 85vh;
+	}
+
+	.line {
+		height: 67vh;
+	}
+
+	.crc-pink {
+		bottom: 120px;
+		right: 250px;
+	}
+
+	.box-blue {
+		bottom: 200px;
+		right: 300px;
+	}
+
+	.box-grey {
+		top: 100px;
+		right: 83px;
+	}
+
+	.txt-type {
+		font-size: 2rem;
+		letter-spacing: .5rem;
+	}
+
+	/* ABOUT */
+	#about {
+		/* height: 70vh; */
+		height: 50vh;
+	}
+
+	.abt-title {
+		font-size: 2rem;
+	}
+
+	.abt-content p {
+		font-size: .8rem;
+	}
+
+	/* WORK */
+	.project-meta {
+		font-size: .6rem;
+		justify-content: center;
+	}
+
+	.project-meta h3 {
+		margin-right: 1rem;
+	}
+
+	/* CONTACT */
+	.contact-info {
+		display: block;
+	}
+
+	.contact-info-content {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	#contact .social-links {
+		font-size: 3rem;
+		margin: 1rem auto 0 auto;
+	}
+
+	#contact .social-links img {
+		width: 4rem;
+		height: 4rem;
+		padding-right: 1.4rem;
+	}
+
+	.contact-form h3 {
+		text-align: center;
+	}
+
+	.contact-form button {
+		font-size: .7rem;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.abt-content p {
+		font-size: 0.6rem;
+	}
 }
