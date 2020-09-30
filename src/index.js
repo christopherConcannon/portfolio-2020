@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import {
+// 	faGithubAlt,
+// 	faInstagram,
+// 	faLinkedinIn
+// } from '@fortawesome/free-brands-svg-icons';
+
+// library.add(faGithubAlt, faInstagram, faLinkedinIn);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,4 +1,5 @@
 import React from 'react'
+import portrait from '../../assets/images/web-sized-portrait.jpg'
 import './About.css'
 
 function About() {
@@ -10,7 +11,7 @@ function About() {
           </h2>
         </div>
         <div className="abt-content">
-        <img src={require(`../../assets/images/web-sized-portrait.jpg`)} alt="portrait" className="About-portrait" />
+        <img src={portrait} alt="portrait" className="About-portrait" />
           <p>
             A native Austinite.  The outline of my life's chronology can be expressed in terms of my passions...
             <br/>The Beautiful Game. 
