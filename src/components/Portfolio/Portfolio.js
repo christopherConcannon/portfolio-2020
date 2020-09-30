@@ -57,7 +57,7 @@ function Portfolio() {
 						look/see
 					</h2>
 					<div className="grid">
-						{projects.map((proj) => <Project {...proj} />)}
+						{projects.map((proj) => <Project {...proj} key={proj.title} />)}
 					</div>
 				</div>
 			</section>
