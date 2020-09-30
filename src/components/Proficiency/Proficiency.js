@@ -2,7 +2,7 @@ import React from 'react'
 
 function Proficiency({prof}) {
   return (
-    <li>
+    <li className="Proficiency">
       {prof}
     </li>
   )

@@ -1,0 +1,19 @@
+/* WORK */
+
+.Portfolio-heading {
+	text-align: right;
+	margin: 2.5rem 2.5rem 0 0;
+}
+
+.Portfolio-grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Portfolio-grid {
+		display: block;
+	} 
+}

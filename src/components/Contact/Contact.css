@@ -1,0 +1,58 @@
+.Contact {
+	background-color: #000000;
+	border: 20px solid var(--pink);
+	padding: 4rem;
+}
+
+
+.Contact input,
+.Contact textarea {
+	border: 5px solid var(--pink);
+	display: block;
+	padding: 7px 15px;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.Contact input:focus,
+.Contact textarea:focus {
+	background-color: rgba(255, 255, 255, 1);
+	outline: none;
+}
+
+.Contact button {
+	color: #fff;
+	background: var(--pink);
+	border: none;
+	text-align: center;
+	padding: 1rem;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 10px;
+	font-family: var(--body-text);
+}
+
+.Contact button:hover {
+	color: var(--pink);
+	background: #fff;
+	transition: all .2s;
+}
+
+.Contact label {
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.Contact h3 {
+		text-align: center;
+	}
+
+	.Contact button {
+		font-size: .7rem;
+	}
+}

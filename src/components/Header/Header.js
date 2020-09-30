@@ -1,11 +1,12 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
+import './Header.css'
 
 function Header() {
 	return (
 		<header className="Header">
       <Navigation />
-			<section id="hero" className="hero">
+			<section id="hero" className="Header-hero">
 				<h1>
           Christopher Concannon
 					{/* <span
@@ -15,14 +16,14 @@ function Header() {
 					>
           </span> */}
 				</h1>
-				<div className="shape box-blue" />
-				<div className="shape crc-pink" />
-				<div className="shape box-grey" />
-				<div className="line line-1" />
-				<div className="line line-2" />
-				<div className="line line-3" />
-				<div className="line line-4" />
-				<div className="line line-5" />
+				<div className="Header-shape box-blue" />
+				<div className="Header-shape crc-pink" />
+				<div className="Header-shape box-grey" />
+				<div className="Header-line line-1" />
+				<div className="Header-line line-2" />
+				<div className="Header-line line-3" />
+				<div className="Header-line line-4" />
+				<div className="Header-line line-5" />
 			</section>
 		</header>
 	);

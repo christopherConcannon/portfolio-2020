@@ -1,15 +1,16 @@
 import React from 'react';
+import './Navigation.css'
 
 function Navigation() {
 	return (
 		<div className="Navigation">
-			<nav id="navbar">
-				<div className="logo">
+			<nav className="Navigation-navbar">
+				<div className="Navigation-logo">
 					<h2>
 						<a href="#home">cc</a>
 					</h2>
 				</div>
-				<ul className="nav-items">
+				<ul className="Navigation-nav-items">
 					<li>
 						<a href="#about">abt-me</a>
 					</li>
@@ -29,12 +30,12 @@ function Navigation() {
 					</li>
 				</ul>
 
-				<div className="overlay-wrap">
-					<input type="checkbox" className="toggler" />
-					<div className="hamburger">
+				<div className="Navigation-overlay-wrap">
+					<input type="checkbox" className="Navigation-toggler" />
+					<div className="Navigation-hamburger">
 						<div />
 					</div>
-					<div className="menu">
+					<div className="Navigation-mobile-menu">
 						<div>
 							<div>
 								<ul id="mobile-nav-links">

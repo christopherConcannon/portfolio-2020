@@ -1,8 +1,9 @@
 import React from 'react';
+import './Project.css'
 
 function Project({ title, imgName, projURL, repoURL, techs }) {
 	return (
-			<div className="grid-item hover-skew">
+			<div className="Project hover-skew">
 				<a href={projURL} target="blank">
 					<img
 						src={require(`../../assets/images/${imgName}`)}
@@ -10,7 +11,7 @@ function Project({ title, imgName, projURL, repoURL, techs }) {
 						alt={`Screenshot of ${title} web application`}
 					/>
 				</a>
-				<div className="project-meta">
+				<div className="Project-meta">
 					<h3>{title}</h3>
 					<a
 						href={repoURL}

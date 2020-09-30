@@ -1,19 +1,20 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import calavera from '../../assets/images/calavera.svg'
+import './Footer.css'
 
 function Footer() {
 	return (
-		<footer id="contact" className="contact">
-			<span id="goto-contact"> &nbsp; </span>
+		<footer id="footer" className="Footer">
+			{/* <span id="goto-Footer"> &nbsp; </span> */}
 
-			<div className="contact-info">
-				<div className="contact-info-content">
+			<div className="Footer-info">
+				<div className="Footer-info-content">
 					<h2>Reach out</h2>
 					<ul>
 						<li>333-333-3333</li>
 						<li>
-							<ul className="social-links">
+							<ul className="Footer-social-links">
 								<li>
 									<a
 										href="https://github.com/christopherConcannon"

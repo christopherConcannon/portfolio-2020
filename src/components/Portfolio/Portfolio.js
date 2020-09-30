@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Project from '../Project/Project';
+import './Portfolio.css';
 
 function Portfolio() {
 	const [ projects ] = useState([
@@ -50,18 +51,16 @@ function Portfolio() {
 	]);
 
 	return (
-		<div className="Portfolio">
-			<section id="work" className="work">
-				<div className="container">
-					<h2 className="work-heading" id="work-heading">
-						look/see
-					</h2>
-					<div className="grid">
-						{projects.map((proj) => <Project {...proj} key={proj.title} />)}
-					</div>
+		<section id="Portfolio" className="Portfolio">
+			<div className="container">
+				<h2 className="Portfolio-heading" id="Portfolio-heading">
+					look/see
+				</h2>
+				<div className="Portfolio-grid">
+					{projects.map((proj) => <Project {...proj} key={proj.title} />)}
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 	);
 }
 

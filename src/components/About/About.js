@@ -5,12 +5,12 @@ import './About.css'
 function About() {
   return (
     <section className="About" id="about">        
-        <div className="abt-title">
+        <div className="About-title">
           <h2>
             About Me
           </h2>
         </div>
-        <div className="abt-content">
+        <div className="Aboutt-content">
         <img src={portrait} alt="portrait" className="About-portrait" />
           <p>
             A native Austinite.  The outline of my life's chronology can be expressed in terms of my passions...
