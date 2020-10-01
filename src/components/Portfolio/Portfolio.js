@@ -51,7 +51,7 @@ function Portfolio() {
 	]);
 
 	return (
-		<section id="Portfolio" className="Portfolio">
+		<section id="look/see" className="Portfolio">
 			<div className="container">
 				<h2 className="Portfolio-heading" id="Portfolio-heading">
 					look/see

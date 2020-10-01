@@ -10,13 +10,15 @@ import { library } from './fontawesome';
 function App() {
 	const [ currentPage, setCurrentPage ] = useState('About');
 
+
+  //  FOR REFERENCE  const links = ['abt-me', 'look/see', 'contact', 'cv', ]
 	const renderPage = () => {
 		switch (currentPage) {
-			case 'Portfolio':
+			case 'look/see':
 				return <Portfolio />;
-			case 'Resume':
+			case 'cv':
 				return <Resume />;
-			case 'Contact':
+			case 'contact':
 				return <Contact />;
 			default:
 				return <About />;

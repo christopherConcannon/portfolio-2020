@@ -2,7 +2,8 @@ import React from 'react';
 import './Navigation.css'
 
 function Navigation({currentPage, setCurrentPage}) {
-  const links = ['About', 'Portfolio', 'Resume', 'Contact']
+  // const links = ['About', 'Portfolio', 'Resume', 'Contact']
+  const links = ['abt-me', 'look/see', 'contact', 'cv', ]
 	return (
 		<div className="Navigation">
 			<nav className="Navigation-navbar">
@@ -34,7 +35,7 @@ function Navigation({currentPage, setCurrentPage}) {
 						<div>
 							<div>
 								<ul id="mobile-nav-links">
-									<li>
+									{/* <li>
 										<a href="#about">about me</a>
 									</li>
 									<li>
@@ -50,7 +51,18 @@ function Navigation({currentPage, setCurrentPage}) {
 										>
 											cv
 										</a>
-									</li>
+									</li> */}
+                            {links.map(link => (
+            <li className="Navigation-nav-item" key={link}>
+              <a
+                href={'#' + link.toLowerCase()}
+                onClick={() => setCurrentPage(link)}
+                className={currentPage === link ? 'Navigation-link Navigation-active-link' : 'Navigation-link'}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
 								</ul>
 							</div>
 						</div>

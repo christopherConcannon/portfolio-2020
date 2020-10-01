@@ -8,7 +8,7 @@ function Header({currentPage, setCurrentPage}) {
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="Header-hero">
 				<h1>
-          Christopher Concannon
+          {/* Christopher Concannon */}
 					{/* <span
 						className="txt-type"
 						data-wait="2000"

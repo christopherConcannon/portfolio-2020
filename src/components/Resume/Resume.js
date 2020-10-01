@@ -27,7 +27,7 @@ function Resume() {
 	];
 
 	return (
-		<div className="Resume">
+		<div className="Resume" id="cv">
 			<h2>
 				Download my CV{' '}
 				<a
