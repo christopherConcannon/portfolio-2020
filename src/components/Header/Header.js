@@ -2,10 +2,10 @@ import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import './Header.css'
 
-function Header() {
+function Header({currentPage, setCurrentPage}) {
 	return (
 		<header className="Header">
-      <Navigation />
+      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="Header-hero">
 				<h1>
           Christopher Concannon

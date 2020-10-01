@@ -32,12 +32,12 @@
 	text-align: right;
 }
 
-.Project-meta i.fab {
+.Project-meta svg {
 	font-size: 2rem;
 	transition: color .2s;
 }
 
-.Project-meta i.fab:hover {
+.Project-meta svg:hover {
 	color: var(--pink);
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import calavera from '../../assets/images/calavera.svg'
-import './Footer.css'
+import calavera from '../../assets/images/calavera.svg';
+import './Footer.css';
 
 function Footer() {
 	return (

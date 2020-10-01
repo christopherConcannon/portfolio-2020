@@ -11,12 +11,6 @@
 	padding: 0 2.5rem;
 }
 
-/* move to header? */
-.Navigation-navbar.faded-header {
-	background-color: #ffcbc8;
-	transition: all 0.4s ease-in-out;
-}
-
 .Navigation-logo {
 	line-height: 1.4em;
 	font-size: 2rem;
@@ -48,7 +42,7 @@
 	display: none;
 }
 
-.current {
+.Navigation-active-link {
 	background-repeat: repeat-x;
 	background-image: linear-gradient(to right, currentColor 100%, currentColor 0);
 	background-size: 1px 1px;

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navigation.css'
 
-function Navigation() {
+function Navigation({currentPage, setCurrentPage}) {
+  const links = ['About', 'Portfolio', 'Resume', 'Contact']
 	return (
 		<div className="Navigation">
 			<nav className="Navigation-navbar">
@@ -11,23 +12,17 @@ function Navigation() {
 					</h2>
 				</div>
 				<ul className="Navigation-nav-items">
-					<li>
-						<a href="#about">abt-me</a>
-					</li>
-					<li>
-						<a href="#work-heading">look/see</a>
-					</li>
-					<li>
-						<a href="#goto-contact">contact</a>
-					</li>
-					<li>
-						<a
-							href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing"
-							target="_blank"
-						>
-							cv
-						</a>
-					</li>
+          {links.map(link => (
+            <li className="Navigation-nav-item" key={link}>
+              <a
+                href={'#' + link.toLowerCase()}
+                onClick={() => setCurrentPage(link)}
+                className={currentPage === link ? 'Navigation-link Navigation-active-link' : 'Navigation-link'}
+              >
+                {link}
+              </a>
+            </li>
+          ))}
 				</ul>
 
 				<div className="Navigation-overlay-wrap">
