@@ -47,6 +47,10 @@
 	color: #fff;
 }
 
+.Contact-error-text {
+  color: var(--pink)
+}
+
 @media screen and (max-width: 768px) {
 	.Contact h3 {
 		text-align: center;
