@@ -1,5 +1,6 @@
 import React from 'react';
 import Proficiency from '../Proficiency/Proficiency';
+import './Resume.css';
 
 function Resume() {
 	const frontEndProfs = [
@@ -27,21 +28,35 @@ function Resume() {
 	];
 
 	return (
-		<div className="Resume" id="cv">
+		<div className="Resume container" id="cv">
 			<h2>
 				Download my CV{' '}
 				<a
 					href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					here
 				</a>
 			</h2>
-			<h3>Front-end Proficiencies</h3>
-			<ul>{frontEndProfs.map((prof) => <Proficiency key={prof} prof={prof} />)}</ul>
-			<h3>Front-end Proficiencies</h3>
-			<ul>{backEndProfs.map((prof) => <Proficiency key={prof} prof={prof} />)}</ul>
+			<div className="Resume-proficiency-container">
+				<div className="Resume-front-end">
+					<h3>Front-end Proficiencies</h3>
+					<ul>
+						{frontEndProfs.map((prof) => (
+							<Proficiency key={prof} prof={prof} />
+						))}
+					</ul>
+				</div>
+				<div className="Resume-back-end">
+					<h3>Back-end Proficiencies</h3>
+					<ul>
+						{backEndProfs.map((prof) => (
+							<Proficiency key={prof} prof={prof} />
+						))}
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 }

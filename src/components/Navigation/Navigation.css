@@ -227,6 +227,11 @@
 
 	.Navigation-overlay-wrap .Navigation-mobile-menu > div > div > ul > li > a:hover {
 		color: var(--secondary-color);
-	}
+  }
+  
+  .Navigation-active-link {
+
+    background-position: 0 calc(100% - 0.4em);
+  }
 
 }

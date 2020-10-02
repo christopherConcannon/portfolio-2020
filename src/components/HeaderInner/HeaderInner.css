@@ -1,0 +1,99 @@
+/* HeaderInner-hero SECTION */
+.HeaderInner {
+  padding-top: 4rem;
+}
+
+.HeaderInner-hero {
+	height: 15vh;
+	/* padding: 0 3rem; */
+  /* background-color: var(--pink); */
+  background: linear-gradient( var(--pink) 65%, #ffffff );
+	position: relative;
+}
+
+
+.HeaderInner-shape {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	transition: all 1s;
+}
+
+.HeaderInner .crc-pink {
+  bottom: 2.5rem;
+	right: 23.5rem;
+	background-color: #fcdee3;
+	border-radius: 50%;
+}
+
+.HeaderInner .box-blue {
+  bottom:3.5rem;
+	right: 25rem;
+	background-color: #2a14f2;
+}
+
+.HeaderInner .box-grey {
+  top: 7rem; 
+	left: 14rem;
+	background-color: #666;
+	z-index: 1;
+}
+
+.HeaderInner .HeaderInner-line {
+	position: absolute;
+	height: 10vh;
+	width: 2px;
+	background-color: red;
+}
+
+.HeaderInner .line-1 {
+	top: 50px;
+	left: 250px;
+}
+
+.HeaderInner .line-2 {
+	top: 50px;
+	left: 225px;
+}
+
+.HeaderInner .line-3 {
+	top: 50px;
+	left: 200px;
+}
+
+.HeaderInner .line-4 {
+	top: 50px;
+	left: 175px;
+}
+
+.HeaderInner .line-5 {
+	top: 50px;
+	left: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.HeaderInner-hero {
+		height: 20vh;
+	}
+
+	.HeaderInner-line {
+		height: 15vh;
+	}
+
+	.HeaderInner .crc-pink {
+		bottom: 2rem;
+		right: 12rem;
+	}
+
+	.HeaderInner .box-blue {
+		bottom: 3rem;
+		right: 14rem;
+	}
+
+	.HeaderInner .box-grey {
+    display: none;
+		/* top: 3rem;
+		left: 7rem; */
+	}
+}

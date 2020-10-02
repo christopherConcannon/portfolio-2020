@@ -5,7 +5,7 @@ import './Header.css'
 
 function Header({currentPage, setCurrentPage}) {
 	return (
-		<header className="Header">
+		<header className="Header" id="Header">
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="Header-hero">
 				<h1>

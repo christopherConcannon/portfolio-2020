@@ -1,0 +1,31 @@
+.Resume {
+  padding: 5rem;
+}
+
+.Resume h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.Resume h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Resume a {
+  color: var(--pink);
+}
+
+.Resume a:hover {
+  color: black;
+}
+
+.Resume ul {
+  line-height: 1.7rem;
+}
+
+.Resume-proficiency-container {
+  display: flex;
+  justify-content: space-around;
+}

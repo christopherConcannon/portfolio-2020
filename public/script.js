@@ -15,6 +15,8 @@ function resetMobileNavState() {
      checkbox.checked = false;
 }
 
+
+
 mobileNavLinks.addEventListener('click', resetMobileNavState);
 
 

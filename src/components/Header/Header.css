@@ -31,21 +31,27 @@
 }
 
 .crc-pink {
-	bottom: 120px;
-	right: 350px;
+  /* bottom: 120px; */
+  bottom: 7.5rem;
+	/* right: 350px; */
+	right: 22rem;
 	background-color: #fcdee3;
 	border-radius: 50%;
 }
 
 .box-blue {
-	bottom: 200px;
-	right: 400px;
+  /* bottom: 200px; */
+  bottom:12.5rem;
+	/* right: 400px; */
+	right: 25rem;
 	background-color: #2a14f2;
 }
 
 .box-grey {
-	top: 100px;
-	right: 183px;
+  /* top: 100px;  */
+  top: 6.25rem; 
+	/* right: 183px; */
+	right: 11.5rem;
 	background-color: #666;
 	z-index: 1;
 }
@@ -87,6 +93,10 @@
 	.Header-hero {
 		height: 85vh;
 	}
+
+  .Header-hero h1 {
+    font-size: 2rem;
+  }
 
 	.Header-line {
 		height: 67vh;

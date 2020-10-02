@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header/Header';
+import HeaderInner from './components/HeaderInner/HeaderInner';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
@@ -29,7 +30,12 @@ function App() {
 
 	return (
 		<div className="App">
-			<Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      {currentPage === 'abt-me' ? 
+        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      :
+        <HeaderInner currentPage={currentPage} setCurrentPage={setCurrentPage} />
+
+      }
 			{renderPage()}
 			<Footer />
 		</div>
