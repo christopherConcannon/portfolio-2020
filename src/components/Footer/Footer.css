@@ -1,5 +1,5 @@
 .Footer {
-  background: linear-gradient(#ffffff, var(--pink) );
+  background: linear-gradient(#ffffff, var(--pink) 40%);
 	/* background-color: #000000; */
 	/* border: 20px solid var(--pink); */
 	padding: 8rem 4rem;
