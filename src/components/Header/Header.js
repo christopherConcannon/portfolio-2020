@@ -1,4 +1,5 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 import Navigation from '../Navigation/Navigation';
 import './Header.css'
 
@@ -8,13 +9,12 @@ function Header({currentPage, setCurrentPage}) {
       <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="Header-hero">
 				<h1>
-          {/* Christopher Concannon */}
-					{/* <span
-						className="txt-type"
-						data-wait="2000"
-						data-words="[&quot;christoPher&quot;, &quot;coNcannon&quot;, &quot;chrIstopher&quot;, &quot;concannOn&quot;, &quot;christopheR&quot;, &quot;conCannon&quot;, &quot;christOpher&quot;, &quot;concAnnon&quot;, &quot;cHristopher&quot;, &quot;concanNon&quot;]"
-					>
-          </span> */}
+          <Typewriter options={{
+            strings: ["christoPher", "coNcannon", "chrIstopher", "concannOn", "christopheR", "conCannon", "christOpher", "concAnnon", "cHristopher", "concanNon"],
+            autoStart: true, 
+            loop: true,
+            delay: 300
+          }} />
 				</h1>
 				<div className="Header-shape box-blue" />
 				<div className="Header-shape crc-pink" />

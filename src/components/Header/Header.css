@@ -19,8 +19,8 @@
 	z-index: 3;
 }
 
-.txt-type > .txt {
-	border-right: 0.2rem solid red;
+.Typewriter__cursor {
+  color: red;
 }
 
 .Header-shape {
