@@ -29,3 +29,25 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+
+  .Resume h2 {
+    text-align: start;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .Resume h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .Resume-proficiency-container {
+    display: block;
+  }
+
+  .Resume-front-end {
+    margin-bottom: 2rem;
+  }
+}

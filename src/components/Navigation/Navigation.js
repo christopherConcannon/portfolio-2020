@@ -18,8 +18,8 @@ function Navigation({ currentPage, setCurrentPage }) {
 					{links.map((link) => (
 						<li className="Navigation-nav-item" key={link}>
 							<a
-								// href={'#' + link.toLowerCase()}
-								href="#Header"
+								// href="#Header"
+								href={currentPage === 'abt-me' ? "#Header" : "#HeaderInner"}
 								onClick={() => setCurrentPage(link)}
 								className={
 									currentPage === link ? (
