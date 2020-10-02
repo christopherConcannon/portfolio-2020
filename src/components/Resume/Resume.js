@@ -32,7 +32,8 @@ function Resume() {
 				Download my CV{' '}
 				<a
 					href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing"
-					target="_blank"
+          target="_blank"
+          rel="noopener noreferrer"
 				>
 					here
 				</a>

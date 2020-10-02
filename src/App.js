@@ -7,8 +7,10 @@ import Resume from './components/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import { library } from './fontawesome';
 
+
+
 function App() {
-	const [ currentPage, setCurrentPage ] = useState('About');
+	const [ currentPage, setCurrentPage ] = useState('abt-me');
 
 
   //  FOR REFERENCE  const links = ['abt-me', 'look/see', 'contact', 'cv', ]

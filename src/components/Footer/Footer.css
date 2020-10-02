@@ -1,8 +1,11 @@
 .Footer {
-	background-color: #000000;
-	border: 20px solid var(--pink);
-	padding: 4rem;
+  background: linear-gradient(#ffffff, var(--pink) );
+	/* background-color: #000000; */
+	/* border: 20px solid var(--pink); */
+	padding: 8rem 4rem;
 }
+
+/* background: linear-gradient(#e66465, #9198e5); */
 
 .Footer-info {
 	display: flex;
@@ -27,7 +30,8 @@
 }
 
 .Footer-info-content a {
-	color: var(--pink);
+	/* color: var(--pink); */
+	color: #000000;
 }
 
 .Footer .Footer-social-links {
@@ -38,7 +42,8 @@
 }
 
 .Footer .Footer-social-links li {
-	width: 50%;
+  width: calc(100% / 5);
+  text-align: center;
 }
 
 .Footer .Footer-social-links li i,

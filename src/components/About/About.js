@@ -10,8 +10,8 @@ function About() {
             About Me
           </h2>
         </div>
-        <div className="Aboutt-content">
         <img src={portrait} alt="portrait" className="About-portrait" />
+        <div className="About-content">
           <p>
             A native Austinite.  The outline of my life's chronology can be expressed in terms of my passions...
             <br/>The Beautiful Game. 

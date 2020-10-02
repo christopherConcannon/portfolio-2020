@@ -1,9 +1,13 @@
-
 /* Header-hero SECTION */
+.Header {
+  padding-top: 4rem;
+}
+
 .Header-hero {
 	height: 100vh;
 	padding: 0 3rem;
-	background-color: var(--pink);
+  /* background-color: var(--pink); */
+  background: linear-gradient( var(--pink), #ffffff );
 	position: relative;
 }
 
