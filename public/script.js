@@ -1,4 +1,4 @@
-// NAVIGATION COLOR FADE ON SCROLL
+// NAVIGATION COLOR FADE ON SCROLL...MAYBE ADD TO USEEFFECT HOOK IN NAV COMPONENT TO SIMULATE COMPONENT DID MOUNT
 window.addEventListener('scroll', () => {
   if (window.scrollY > 44) {
     document.querySelector('.Navigation-navbar').classList.add('faded-header')
@@ -7,17 +7,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// MOBILE MENU 
-const mobileNavLinks = document.querySelector('#mobile-nav-links');
-const checkbox = document.querySelector('.Navigation-toggler');
-
-function resetMobileNavState() {
-     checkbox.checked = false;
-}
-
-
-
-mobileNavLinks.addEventListener('click', resetMobileNavState);
 
 
 

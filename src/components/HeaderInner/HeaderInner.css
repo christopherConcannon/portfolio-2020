@@ -8,6 +8,7 @@
 	/* padding: 0 3rem; */
   /* background-color: var(--pink); */
   background: linear-gradient( var(--pink) 65%, #ffffff );
+  /* background: linear-gradient( var(--pink), #ffffff ); */
 	position: relative;
 }
 
