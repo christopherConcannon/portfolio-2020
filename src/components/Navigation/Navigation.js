@@ -59,7 +59,7 @@ function Navigation({ currentPage, setCurrentPage }) {
 									{links.map((link) => (
 										<li onClick={() => setChecked(false)} className="Navigation-nav-item" key={link}>
 											<a
-												href="{'#' + link.toLowerCase()}"
+												href="#root"
 												onClick={() => setCurrentPage(link)}
 												className={
 													currentPage === link ? (

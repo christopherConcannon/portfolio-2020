@@ -15,6 +15,11 @@
 	margin-right: 10%;
 }
 
+.About-header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .About-content {
   flex: 1;
   /* display: flex;
@@ -53,8 +58,24 @@
 	}
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
+  .About {
+    display: block;
+    height: auto;
+  }
+
+  .About-header-wrapper {
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  }
+
 	.About-content p {
 		font-size: 0.6rem;
-	}
+  }
+  
+}
+
+@media screen and (max-width: 414px) {
+
 }
