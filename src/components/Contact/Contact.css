@@ -94,6 +94,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .Contact {
+    padding: 2rem;
+  }
+
   .Contact-wrapper {
     padding: 2rem 1rem;
   }
