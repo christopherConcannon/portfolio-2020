@@ -1,17 +1,16 @@
 /* HeaderInner-hero SECTION */
 .HeaderInner {
-  padding-top: 4rem;
+	padding-top: 4rem;
 }
 
 .HeaderInner-hero {
 	height: 15vh;
 	/* padding: 0 3rem; */
-  /* background-color: var(--pink); */
-  background: linear-gradient( var(--pink) 65%, #ffffff );
-  /* background: linear-gradient( var(--pink), #ffffff ); */
+	/* background-color: var(--pink); */
+	background: linear-gradient(var(--pink) 65%, #ffffff);
+	/* background: linear-gradient( var(--pink), #ffffff ); */
 	position: relative;
 }
-
 
 .HeaderInner-shape {
 	width: 50px;
@@ -21,20 +20,20 @@
 }
 
 .HeaderInner .crc-pink {
-  bottom: 2.5rem;
+	bottom: 2.5rem;
 	right: 23.5rem;
 	background-color: #fcdee3;
 	border-radius: 50%;
 }
 
 .HeaderInner .box-blue {
-  bottom:3.5rem;
+	bottom: 3.5rem;
 	right: 25rem;
 	background-color: #2a14f2;
 }
 
 .HeaderInner .box-grey {
-  top: 7rem; 
+	top: 7rem;
 	left: 14rem;
 	background-color: #666;
 	z-index: 1;
@@ -72,7 +71,6 @@
 	left: 150px;
 }
 
-
 @media screen and (max-width: 768px) {
 	.HeaderInner-hero {
 		height: 20vh;
@@ -93,7 +91,7 @@
 	}
 
 	.HeaderInner .box-grey {
-    display: none;
+		display: none;
 		/* top: 3rem;
 		left: 7rem; */
 	}

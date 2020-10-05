@@ -8,13 +8,10 @@ import Resume from './components/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import { library } from './fontawesome';
 
-
-
 function App() {
 	const [ currentPage, setCurrentPage ] = useState('abt-me');
 
-
-  //  FOR REFERENCE  const links = ['abt-me', 'look/see', 'contact', 'cv', ]
+	//  FOR REFERENCE  const links = ['abt-me', 'look/see', 'contact', 'cv', ]
 	const renderPage = () => {
 		switch (currentPage) {
 			case 'look/see':
@@ -30,12 +27,11 @@ function App() {
 
 	return (
 		<div className="App">
-      {currentPage === 'abt-me' ? 
-        <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      :
-        <HeaderInner currentPage={currentPage} setCurrentPage={setCurrentPage} />
-
-      }
+			{currentPage === 'abt-me' ? (
+				<Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+			) : (
+				<HeaderInner currentPage={currentPage} setCurrentPage={setCurrentPage} />
+			)}
 			{renderPage()}
 			<Footer />
 		</div>

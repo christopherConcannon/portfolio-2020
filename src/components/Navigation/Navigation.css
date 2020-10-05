@@ -4,10 +4,9 @@
 	height: 70px;
 	display: flex;
 	position: fixed;
-	/* position: sticky; */
-  top: 0;
-  left: 0;
-  right: 0;
+	top: 0;
+	left: 0;
+	right: 0;
 	justify-content: center;
 	align-items: center;
 	z-index: 5;
@@ -15,8 +14,8 @@
 }
 
 .Navigation-navbar.faded-header {
-  background-color:#ffcbc8;
-  transition: all 0.4s ease-in-out;
+	background-color: #ffcbc8;
+	transition: all 0.4s ease-in-out;
 }
 
 .Navigation-logo {
@@ -57,11 +56,9 @@
 	background-position: 0 calc(100% - 0.8em);
 }
 
-
 @media screen and (max-width: 768px) {
-  .Navigation-navbar {
-    padding: 0;
-    
+	.Navigation-navbar {
+		padding: 0;
 	}
 
 	.Navigation-navbar ul.Navigation-nav-items {
@@ -145,14 +142,23 @@
 	}
 
 	/* Turns Lines Into X */
-	.Navigation-overlay-wrap .Navigation-toggler:checked + .Navigation-hamburger > div:before,
-	.Navigation-overlay-wrap .Navigation-toggler:checked + .Navigation-hamburger > div:after {
+	.Navigation-overlay-wrap
+		.Navigation-toggler:checked
+		+ .Navigation-hamburger
+		> div:before,
+	.Navigation-overlay-wrap
+		.Navigation-toggler:checked
+		+ .Navigation-hamburger
+		> div:after {
 		top: 0;
 		transform: rotate(90deg);
 	}
 
 	/* Rotate On Hover When Checked */
-	.Navigation-overlay-wrap .Navigation-toggler:checked:hover + .Navigation-hamburger > div {
+	.Navigation-overlay-wrap
+		.Navigation-toggler:checked:hover
+		+ .Navigation-hamburger
+		> div {
 		transform: rotate(225deg);
 	}
 
@@ -205,7 +211,11 @@
 		/* transition-duration: var(--Navigation-mobile-menu-speed); */
 	}
 
-	.Navigation-overlay-wrap .Navigation-toggler:checked ~ .Navigation-mobile-menu > div > div {
+	.Navigation-overlay-wrap
+		.Navigation-toggler:checked
+		~ .Navigation-mobile-menu
+		> div
+		> div {
 		opacity: 1;
 		transform: translateY(-50px);
 	}
@@ -227,11 +237,9 @@
 
 	.Navigation-overlay-wrap .Navigation-mobile-menu > div > div > ul > li > a:hover {
 		color: var(--secondary-color);
-  }
-  
-  .Navigation-active-link {
+	}
 
-    background-position: 0 calc(100% - 0.4em);
-  }
-
+	.Navigation-active-link {
+		background-position: 0 calc(100% - 0.4em);
+	}
 }

@@ -36,7 +36,7 @@ function Contact() {
 
 	return (
 		<div id="contact" className="Contact container">
-      <h1>Just call my name, and I'll be there...</h1>
+			<h1>Just call my name, and I'll be there...</h1>
 			<div className="Contact-wrapper">
 				<form id="Contact-form" className="Contact-form" onSubmit={handleSubmit}>
 					<div>

@@ -53,9 +53,9 @@
 	.Project {
 		margin: 2rem;
 		width: calc(100% - 4rem);
-  }
-  
-  .Project-meta {
+	}
+
+	.Project-meta {
 		font-size: .6rem;
 		justify-content: center;
 	}

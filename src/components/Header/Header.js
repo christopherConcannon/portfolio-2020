@@ -1,20 +1,33 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Navigation from '../Navigation/Navigation';
-import './Header.css'
+import './Header.css';
 
-function Header({currentPage, setCurrentPage}) {
+function Header({ currentPage, setCurrentPage }) {
 	return (
 		<header className="Header" id="Header">
-      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
+			<Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="Header-hero">
 				<h1>
-          <Typewriter options={{
-            strings: ["christoPher", "coNcannon", "chrIstopher", "concannOn", "christopheR", "conCannon", "christOpher", "concAnnon", "cHristopher", "concanNon"],
-            autoStart: true, 
-            loop: true,
-            delay: 300
-          }} />
+					<Typewriter
+						options={{
+							strings   : [
+								'christoPher',
+								'coNcannon',
+								'chrIstopher',
+								'concannOn',
+								'christopheR',
+								'conCannon',
+								'christOpher',
+								'concAnnon',
+								'cHristopher',
+								'concanNon'
+							],
+							autoStart : true,
+							loop      : true,
+							delay     : 300
+						}}
+					/>
 				</h1>
 				<div className="Header-shape box-blue" />
 				<div className="Header-shape crc-pink" />

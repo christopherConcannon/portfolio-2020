@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialLinks from '../SocialLinks/SocialLinks'
+import SocialLinks from '../SocialLinks/SocialLinks';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import calavera from '../../assets/images/calavera.svg';
 import './Footer.css';
@@ -9,14 +9,14 @@ function Footer() {
 		<footer id="footer" className="Footer">
 			<div className="Footer-info">
 				<div className="Footer-info-content">
-							<ul className="Footer-social-links">
-                <SocialLinks />
-								<li>
-									<a href="mailto:xtophe@christopherconcannon.com">
-										<img src={calavera} alt="Traditional calavera"/>
-									</a>
-								</li>
-							</ul>
+					<ul className="Footer-social-links">
+						<SocialLinks />
+						<li>
+							<a href="mailto:xtophe@christopherconcannon.com">
+								<img src={calavera} alt="Traditional calavera" />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>

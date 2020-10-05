@@ -1,19 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navigation.css';
 
 function Navigation({ currentPage, setCurrentPage }) {
 	// const links = ['About', 'Portfolio', 'Resume', 'Contact']
-  const links = [ 'abt-me', 'look/see', 'contact', 'cv' ];
+	const links = [ 'abt-me', 'look/see', 'contact', 'cv' ];
 
-  const [ checked, setChecked ] = useState(false);
-  const checkbox = document.querySelector('.Navigation-toggler')
+	const [ checked, setChecked ] = useState(false);
+	const checkbox = document.querySelector('.Navigation-toggler');
 
-  useEffect(() => {
-    if (checkbox) {
-      checkbox.checked = checked
-    }
-  })
-
+	useEffect(() => {
+		if (checkbox) {
+			checkbox.checked = checked;
+		}
+	});
 
 	return (
 		<div className="Navigation">
@@ -48,7 +47,11 @@ function Navigation({ currentPage, setCurrentPage }) {
 				</ul>
 
 				<div className="Navigation-overlay-wrap">
-					<input onClick={() => setChecked(!checked)}type="checkbox" className="Navigation-toggler" />
+					<input
+						onClick={() => setChecked(!checked)}
+						type="checkbox"
+						className="Navigation-toggler"
+					/>
 					<div className="Navigation-hamburger">
 						<div />
 					</div>
@@ -57,7 +60,11 @@ function Navigation({ currentPage, setCurrentPage }) {
 							<div>
 								<ul id="mobile-nav-links">
 									{links.map((link) => (
-										<li onClick={() => setChecked(false)} className="Navigation-nav-item" key={link}>
+										<li
+											onClick={() => setChecked(false)}
+											className="Navigation-nav-item"
+											key={link}
+										>
 											<a
 												href="#root"
 												onClick={() => setCurrentPage(link)}

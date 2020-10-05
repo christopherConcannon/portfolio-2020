@@ -1,12 +1,12 @@
 import React from 'react';
 // import Typewriter from 'typewriter-effect';
 import Navigation from '../Navigation/Navigation';
-import './HeaderInner.css'
+import './HeaderInner.css';
 
-function HeaderInner({currentPage, setCurrentPage}) {
+function HeaderInner({ currentPage, setCurrentPage }) {
 	return (
 		<header className="HeaderInner" id="HeaderInner">
-      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
+			<Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			<section id="hero" className="HeaderInner-hero">
 				<div className="HeaderInner-shape box-blue" />
 				<div className="HeaderInner-shape crc-pink" />

@@ -1,0 +1,20 @@
+li.SocialLink {
+	width: calc(100% / 5);
+	text-align: center;
+}
+
+li.SocialLink i,
+li.SocialLink img {
+	transition: transform .3s;
+}
+
+li.SocialLink i:hover,
+li.SocialLink img:hover {
+	transform: scale(1.3);
+}
+
+li.SocialLink img {
+	width: 6rem;
+	height: 6rem;
+	padding-top: 1rem;
+}
