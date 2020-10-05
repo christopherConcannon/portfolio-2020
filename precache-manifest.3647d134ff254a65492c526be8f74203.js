@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a4d2589dbf09d0a7e9f02e144733166",
+    "revision": "b2902290bba692a9cb25ca6d2abcf32f",
     "url": "/portfolio-2020/index.html"
   },
   {
-    "revision": "17fcef579977d7dd7b40",
-    "url": "/portfolio-2020/static/css/main.ce5637ec.chunk.css"
+    "revision": "8bbb41792bf80b4e01d5",
+    "url": "/portfolio-2020/static/css/main.fab567a8.chunk.css"
   },
   {
     "revision": "1c079148a741a8e8a171",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-2020/static/js/2.37de2f78.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "17fcef579977d7dd7b40",
-    "url": "/portfolio-2020/static/js/main.2d1f49f8.chunk.js"
+    "revision": "8bbb41792bf80b4e01d5",
+    "url": "/portfolio-2020/static/js/main.4e71b559.chunk.js"
   },
   {
     "revision": "bbf3efb9002603ffad2a",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "28b79212adcdaf363523892deb20154a",
     "url": "/portfolio-2020/static/media/call-it-a-night-screenshot.28b79212.jpg"
-  },
-  {
-    "revision": "5d51cda837b7dc3343942d7eeccd5645",
-    "url": "/portfolio-2020/static/media/coding-assessment.5d51cda8.jpg"
   },
   {
     "revision": "1a743d795acae2f7be1bbbc83be656d7",
@@ -76,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-2020/static/media/run-buddy.1010dd79.jpg"
   },
   {
-    "revision": "1524ddca1f19ea2ba427a170d2aa1b25",
-    "url": "/portfolio-2020/static/media/screenshot.1524ddca.jpg"
+    "revision": "9d12460856950b4eb78be7223ca5fdaa",
+    "url": "/portfolio-2020/static/media/screenshot.9d124608.png"
   },
   {
     "revision": "d5a378c2c784b8edf5ddc272a93e424d",
