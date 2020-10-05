@@ -32,9 +32,11 @@ function Resume() {
 			<h2>
 				Download my CV{' '}
 				<a
-					href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing"
+          // href="https://drive.google.com/file/d/1ZDTWGtWtq6Idg8-0AN4VQJD7ydhA1W63/view?usp=sharing"
+          href={(require('../../assets/images/Christopher_Concannon_CV.pdf'))}
 					target="_blank"
-					rel="noopener noreferrer"
+          rel="noopener noreferrer"
+          download="Christopher_Concannon_CV"
 				>
 					here
 				</a>
