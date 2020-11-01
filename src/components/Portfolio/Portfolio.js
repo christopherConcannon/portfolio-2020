@@ -4,6 +4,14 @@ import './Portfolio.css';
 
 function Portfolio() {
 	const [ projects ] = useState([
+    {
+			title   : 'Buskr',
+			imgName : 'buskr.jpg',
+			projURL :
+				'https://polar-headland-24294.herokuapp.com/',
+			repoURL : 'https://github.com/jessicajernigan/dreamteam_project3',
+			techs   : 'MERN, GraphQL, Apollo'
+		},
 		{
 			title   : 'Instartist',
 			imgName : 'instartist.jpg',
@@ -17,14 +25,6 @@ function Portfolio() {
 			projURL : 'https://christopherconcannon.github.io/call-it-a-night/',
 			repoURL : 'https://github.com/christopherConcannon/call-it-a-night',
 			techs   : 'Javascript, AJAX'
-		},
-		{
-			title   : 'Buskr',
-			imgName : 'buskr.jpg',
-			projURL :
-				'https://polar-headland-24294.herokuapp.com/',
-			repoURL : 'https://github.com/jessicajernigan/dreamteam_project3',
-			techs   : 'MERN, GraphQL, Apollo'
 		},
 		{
 			title   : 'Employee Database',
