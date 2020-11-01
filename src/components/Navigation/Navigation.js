@@ -49,6 +49,8 @@ function Navigation({ currentPage, setCurrentPage }) {
 				<div className="Navigation-overlay-wrap">
 					<input
 						onClick={() => setChecked(!checked)}
+            // depends on previous state so use callback syntax
+            // onClick={() => setChecked(prev => !prev)}
 						type="checkbox"
 						className="Navigation-toggler"
 					/>

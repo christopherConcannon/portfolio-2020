@@ -19,12 +19,12 @@ function Portfolio() {
 			techs   : 'Javascript, AJAX'
 		},
 		{
-			title   : 'Team Profile Generator',
-			imgName : 'team-profile-generator.jpg',
+			title   : 'Buskr',
+			imgName : 'buskr.jpg',
 			projURL :
-				'https://drive.google.com/file/d/13Fr2NtNjTjwbumeZLdQ5HMzYugiWGzvE/view',
-			repoURL : 'https://github.com/christopherConcannon/team-profile-generator',
-			techs   : 'Node.js'
+				'https://polar-headland-24294.herokuapp.com/',
+			repoURL : 'https://github.com/jessicajernigan/dreamteam_project3',
+			techs   : 'MERN, GraphQL, Apollo'
 		},
 		{
 			title   : 'Employee Database',
