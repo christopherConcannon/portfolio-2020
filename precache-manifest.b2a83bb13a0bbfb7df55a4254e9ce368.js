@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "acdea3b3dca60590450b7ba316cb5019",
+    "revision": "8e922ee2e565fbe63c684d3951829188",
     "url": "/portfolio-2020/index.html"
   },
   {
-    "revision": "a629a2f2e3e050ed58c8",
+    "revision": "8b422949713eae227478",
     "url": "/portfolio-2020/static/css/main.a89211e8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-2020/static/js/2.9e73d542.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a629a2f2e3e050ed58c8",
-    "url": "/portfolio-2020/static/js/main.9807a174.chunk.js"
+    "revision": "8b422949713eae227478",
+    "url": "/portfolio-2020/static/js/main.02fc8274.chunk.js"
   },
   {
     "revision": "bbf3efb9002603ffad2a",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "48dfdba3eb0559af9ddb34cc51d06aa5",
     "url": "/portfolio-2020/static/media/EdgeLedger.48dfdba3.jpg"
+  },
+  {
+    "revision": "186e433f2ac63da0726f75a894401d7e",
+    "url": "/portfolio-2020/static/media/buskr.186e433f.jpg"
   },
   {
     "revision": "f8fc027b4d8e0ad97c02feacdfc5d588",
