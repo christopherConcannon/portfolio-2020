@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import Header from './components/Header/Header';
 import HeaderInner from './components/HeaderInner/HeaderInner';
 import About from './components/About/About';
@@ -12,18 +14,7 @@ function App() {
 	const [ currentPage, setCurrentPage ] = useState('abt-me');
 
 	//  FOR REFERENCE  const links = ['abt-me', 'look/see', 'contact', 'cv', ]
-	const renderPage = () => {
-		switch (currentPage) {
-			case 'look/see':
-				return <Portfolio />;
-			case 'cv':
-				return <Resume />;
-			case 'contact':
-				return <Contact />;
-			default:
-				return <About />;
-		}
-	};
+
 
 	return (
 		<div className="App">
@@ -32,10 +23,21 @@ function App() {
 			) : (
 				<HeaderInner currentPage={currentPage} setCurrentPage={setCurrentPage} />
 			)}
-			{renderPage()}
+        <>
+          <Switch>
+            <Route exact path='/' component={About} />
+            <Route exact path='/abt-me' component={About} />
+            <Route exact path='/look-see' component={Portfolio} />
+            <Route exact path='/cv' component={Resume} />
+            <Route exact path='/contact' component={Contact} />
+            <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
+          </Switch>
+        </>
 			<Footer />
 		</div>
 	);
 }
 
 export default App;
+
+
