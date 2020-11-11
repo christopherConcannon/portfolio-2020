@@ -7,7 +7,8 @@ function Resume() {
 		'HTML 5',
 		'CSS 3',
 		'Javascript',
-		'React',
+    'React',
+    'Redux',
 		'SASS',
 		'Bootstrap',
 		'Materialize',
@@ -23,7 +24,9 @@ function Resume() {
 		'MySQL',
 		'Sequelize ORM',
 		'MongoDB',
-		'Mongoose',
+    'Mongoose',
+    'GraphQL', 
+    'Apollo',
 		'PHP'
 	];
 

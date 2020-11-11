@@ -48,13 +48,13 @@
 .Navigation-overlay-wrap {
 	display: none;
 }
-
+/* 
 .Navigation-active-link {
 	background-repeat: repeat-x;
 	background-image: linear-gradient(to right, currentColor 100%, currentColor 0);
 	background-size: 1px 1px;
 	background-position: 0 calc(100% - 0.8em);
-}
+} */
 
 @media screen and (max-width: 768px) {
 	.Navigation-navbar {

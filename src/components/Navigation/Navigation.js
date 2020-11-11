@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './Navigation.css';
 
-function Navigation({ currentPage, setCurrentPage }) {
-	// const links = ['About', 'Portfolio', 'Resume', 'Contact']
-	const links = [ 'abt-me', 'look/see', 'contact', 'cv' ];
+function Navigation({ setCurrentPage }) {
+	const links = [ 'abt-me', 'look-see', 'contact', 'cv' ];
+	const activeStyle = {
+    backgroundRepeat: 'repeat-x',
+    backgroundImage: 'linear-gradient(to right, currentColor 100%, currentColor 0)',
+    backgroundSize: '1px 1px',
+    backgroundPosition: '0 calc(100% - 0.8em)' 
+	};
 
 	const [ checked, setChecked ] = useState(false);
 	const checkbox = document.querySelector('.Navigation-toggler');
@@ -12,36 +18,34 @@ function Navigation({ currentPage, setCurrentPage }) {
 		if (checkbox) {
 			checkbox.checked = checked;
 		}
-	});
+  });
+  
+  function handleMobileClick(link) {
+    setCurrentPage(link)
+    setChecked(false)
+  }
 
 	return (
 		<div className="Navigation">
 			<nav className="Navigation-navbar">
 				<div className="Navigation-logo">
 					<h2>
-						<a onClick={() => setCurrentPage('abt-me')} href="#root">
+            <Link exact="true" to='/' onClick={() => setCurrentPage('abt-me')}>
 							cc
-						</a>
+						</Link>
 					</h2>
 				</div>
 				<ul className="Navigation-nav-items">
 					{links.map((link) => (
 						<li className="Navigation-nav-item" key={link}>
-							<a
-								href="#root"
-								// href="#Header"
-								// href={currentPage === 'abt-me' ? "#Header" : "#HeaderInner"}
+							<NavLink
+								exact
+								to={`/${link}`}
+								activeStyle={activeStyle}
 								onClick={() => setCurrentPage(link)}
-								className={
-									currentPage === link ? (
-										'Navigation-link Navigation-active-link'
-									) : (
-										'Navigation-link'
-									)
-								}
 							>
 								{link}
-							</a>
+							</NavLink>
 						</li>
 					))}
 				</ul>
@@ -49,8 +53,8 @@ function Navigation({ currentPage, setCurrentPage }) {
 				<div className="Navigation-overlay-wrap">
 					<input
 						onClick={() => setChecked(!checked)}
-            // depends on previous state so use callback syntax
-            // onClick={() => setChecked(prev => !prev)}
+						// depends on previous state so use callback syntax
+						// onClick={() => setChecked(prev => !prev)}
 						type="checkbox"
 						className="Navigation-toggler"
 					/>
@@ -62,24 +66,15 @@ function Navigation({ currentPage, setCurrentPage }) {
 							<div>
 								<ul id="mobile-nav-links">
 									{links.map((link) => (
-										<li
-											onClick={() => setChecked(false)}
-											className="Navigation-nav-item"
-											key={link}
-										>
-											<a
-												href="#root"
-												onClick={() => setCurrentPage(link)}
-												className={
-													currentPage === link ? (
-														'Navigation-link Navigation-active-link'
-													) : (
-														'Navigation-link'
-													)
-												}
+										<li className="Navigation-nav-item" key={link}>
+											<NavLink
+												exact
+												to={`/${link}`}
+												activeStyle={activeStyle}
+												onClick={() => handleMobileClick(link)}
 											>
 												{link}
-											</a>
+											</NavLink>
 										</li>
 									))}
 								</ul>
