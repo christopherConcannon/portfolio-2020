@@ -2,11 +2,30 @@
 	padding: 8rem;
 }
 
+.Contact h1 {
+  color: black;
+  margin-bottom: 4rem;
+}
+
 .Contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
 	position: relative;
 	background-color: #000000;
 	border-radius: 10px;
 	padding: 5rem;
+}
+
+.Contact-details {
+  color: #ffffff;
+  margin-right: 4rem;
+  line-height: 1.6;
+}
+
+.Contact-details h2 {
+  color: var(--pink);
+  margin-bottom: 2rem;
 }
 
 .Contact-wrapper:after {
@@ -23,9 +42,8 @@
 	z-index: -1;
 }
 
-.Contact h1 {
-	color: black;
-	margin-bottom: 4rem;
+.Contact-form {
+  flex: 1;
 }
 
 .Contact input,

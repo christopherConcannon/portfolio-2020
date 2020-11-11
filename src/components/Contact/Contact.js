@@ -38,6 +38,13 @@ function Contact() {
 		<div id="contact" className="Contact container">
 			<h1>Just call my name, and I'll be there...</h1>
 			<div className="Contact-wrapper">
+        <div className="Contact-details">
+        <h2>Reach out</h2>
+        <p>9300 Castlewood Drive</p>
+        <p>Austin, TX 78748</p>
+        <br/>
+        <p>(512) 992-6167</p>
+        </div>
 				<form id="Contact-form" className="Contact-form" onSubmit={handleSubmit}>
 					<div>
 						<label htmlFor="name">Name:</label>
@@ -79,5 +86,41 @@ function Contact() {
 		</div>
 	);
 }
+
+   
+// <!-- CONTACT SECTION -->
+
+// <footer id="contact" class="contact">
+//   <span id="goto-contact"> &nbsp; </span>
+
+//   <div class="contact-info">
+//     <div class="contact-info-content">
+//       <h2>Reach out</h2>
+//       <ul>
+//         <li>333-333-3333</li>
+//         <li>
+//           <ul class="social-links">
+//             <li><a href="https://github.com/christopherConcannon" target="blank"><i class="fab fa-github-alt"></i></a></li>
+//             <li><a href="https://www.linkedin.com/in/christopher-concannon-4a91841a6/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+//             <li><a href="#"><i class="fab fa-instagram" target="blank"></i></a></li>
+            
+//             <li><a href="mailto:xtophe@christopherconcannon.com"><img src="./assets/images/calavera.svg"/></a></li>
+//           </ul>
+//         </li>
+//       </ul>
+//     </div>
+//     <div class="contact-form">
+//       <h3>Contact Me</h3>
+//       <form>
+//         <label for="contact-name">Your Name</label>
+//         <input type="text" id="contact-name"/>
+//         <label for="contact-message">Message</label>
+//         <textarea id="contact-message"  rows="10"></textarea>
+
+//         <button type="submit">Submit</button>
+//       </form>
+//     </div>
+//   </div>
+// </footer>
 
 export default Contact;

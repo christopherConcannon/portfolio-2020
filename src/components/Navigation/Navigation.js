@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation({ setCurrentPage }) {
@@ -30,9 +30,9 @@ function Navigation({ setCurrentPage }) {
 			<nav className="Navigation-navbar">
 				<div className="Navigation-logo">
 					<h2>
-						<a onClick={() => setCurrentPage('abt-me')} href="#root">
+            <Link exact="true" to='/' onClick={() => setCurrentPage('abt-me')}>
 							cc
-						</a>
+						</Link>
 					</h2>
 				</div>
 				<ul className="Navigation-nav-items">
