@@ -4,7 +4,7 @@
 
 ![Portfolio 2020](./src/assets/images/screenshot.png)
 
-[Visit Site](https://christopherconcannon.github.io/portfolio-2020/)
+[Visit Site](https://christopher-concannon.herokuapp.com/)
 
 
 
