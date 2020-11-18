@@ -2,7 +2,7 @@
   "name": "portfolio-2020",
   "version": "1.0.0",
   "description": "![MIT license badge](https://img.shields.io/badge/license-MIT-green)",
-  "main": "index.js",
+  "main": "server/server.js",
   "dependencies": {
     "if-env": "^1.0.4"
   },
