@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import Header from './components/Header/Header';
 import HeaderInner from './components/HeaderInner/HeaderInner';

@@ -4,7 +4,8 @@
   "description": "![MIT license badge](https://img.shields.io/badge/license-MIT-green)",
   "main": "server/server.js",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "concurrently": "^5.3.0"

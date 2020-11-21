@@ -33,21 +33,25 @@ function Contact() {
 
 	function handleSubmit(e) {
 		e.preventDefault()
-    console.log(formState)
-    axios({
-      method: "POST", 
-      url:"http://localhost:3002/send", 
-      data:  formState
-      // data:  {name: 'test', email: 'test@email.com', message: 'test'}
-    }).then((response)=>{
-      console.log('response: ', response);
-      if (response.data.status === 'success') {
-        alert("Message Sent."); 
-        // resetForm()
-      } else if(response.data.status === 'fail') {
-        alert("Message failed to send.")
-      }
-    })
+		const { name, email, message } = formState
+		if (name !== '' && email !== '' && formState !== '') {
+			axios({
+				method : 'POST',
+				url    : 'http://localhost:3002/send',
+				data   : formState
+				// data:  {name: 'test', email: 'test@email.com', message: 'test'}
+			}).then((response) => {
+				console.log('response: ', response)
+				if (response.data.status === 'success') {
+					alert('Message Sent.')
+					// resetForm()
+				} else if (response.data.status === 'fail') {
+					alert('Message failed to send.')
+				}
+			})
+		} else {
+      console.log('must fill out all form fields')
+    }
 	}
 
 	return (
