@@ -34,7 +34,7 @@ function Contact() {
 	function handleSubmit(e) {
 		e.preventDefault()
 		const { name, email, message } = formState
-		if (name !== '' && email !== '' && formState !== '') {
+		if (name !== '' && email !== '' && message !== '') {
 			axios({
 				method : 'POST',
 				url    : 'http://localhost:3002/send',
