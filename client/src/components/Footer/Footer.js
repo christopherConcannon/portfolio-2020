@@ -1,6 +1,5 @@
 import React from 'react';
 import SocialLinks from '../SocialLinks/SocialLinks';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import calavera from '../../assets/images/calavera.svg';
 import './Footer.css';
 

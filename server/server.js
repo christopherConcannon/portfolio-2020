@@ -3,9 +3,10 @@ const router = express.Router()
 const nodemailer = require('nodemailer')
 const cors = require('cors')
 require('dotenv').config()
-// const creds = require('./config');
 
-console.log('user: ', process.env.USER)
+const PORT = process.env.PORT || 3001;
+
+
 
 const transport = {
 	// host: 'smtp.mail.yahoo.com', // Don’t forget to replace with the SMTP host of your provider
@@ -77,4 +78,4 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/', router)
-app.listen(3002)
+app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`))
