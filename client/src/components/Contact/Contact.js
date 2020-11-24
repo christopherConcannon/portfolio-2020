@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import axios from 'axios'
+
+import Message from '../Message/Message'
 
 import { validateEmail } from '../../utils/helpers'
 import './Contact.css'
@@ -9,8 +11,11 @@ function Contact() {
 	const { name, email, message } = formState
 
 	const [ errorMessage, setErrorMessage ] = useState('')
+  const [ formSubmitMessage, setFormSubmitMessage ] = useState(null)
+  
+  const formRef = useRef(null)
 
-	function handleChange(e) {
+	function handleBlur(e) {
 		if (e.target.name === 'email') {
 			const isValid = validateEmail(e.target.value)
 			// console.log(isValid)
@@ -29,7 +34,11 @@ function Contact() {
 		if (!errorMessage) {
 			setFormState({ ...formState, [e.target.name]: e.target.value })
 		}
-	}
+  }
+  
+  function resetForm() {
+     Array.from(formRef.current.elements).forEach(el => el.value = '')
+  }
 
 	function handleSubmit(e) {
 		e.preventDefault()
@@ -41,12 +50,12 @@ function Contact() {
 				data   : formState
 				// data:  {name: 'test', email: 'test@email.com', message: 'test'}
 			}).then((response) => {
-				console.log('response: ', response)
 				if (response.data.status === 'success') {
-					alert('Message Sent.')
-					// resetForm()
+          setFormSubmitMessage('success')
+          resetForm()
 				} else if (response.data.status === 'fail') {
-					alert('Message failed to send.')
+          setFormSubmitMessage('fail')
+          resetForm()
 				}
 			})
 		} else {
@@ -65,22 +74,22 @@ function Contact() {
 					<br />
 					<p>(512) 992-6167</p>
 				</div>
-				<form id='Contact-form' className='Contact-form' onSubmit={handleSubmit}>
+				<form id='Contact-form' className='Contact-form' onSubmit={handleSubmit} ref={formRef}>
 					<div>
 						<label htmlFor='name'>Name:</label>
-						<input type='text' name='name' defaultValue={name} onBlur={handleChange} />
+						<input type='text' name='name' defaultValue={name} onBlur={handleBlur} />
 					</div>
 					<div>
 						<label htmlFor='email'>Email address:</label>
-						<input type='email' name='email' defaultValue={email} onBlur={handleChange} />
+						<input type='email' name='email' defaultValue={email} onBlur={handleBlur} />
 					</div>
 					<div>
 						<label htmlFor='message'>Message:</label>
 						<textarea
 							name='message'
-							rows='5'
+              rows='5'
 							defaultValue={message}
-							onBlur={handleChange}
+							onBlur={handleBlur}
 						/>
 					</div>
 					{errorMessage && (
@@ -88,6 +97,7 @@ function Contact() {
 							<p className='Contact-error-text'>{errorMessage}</p>
 						</div>
 					)}
+          {formSubmitMessage === 'success' ? <Message>Thank you for reaching out, I will get back to you soon</Message> : formSubmitMessage === 'fail' ? <Message>Sorry, there was a problem with your submission, please try again later</Message> : null}
 					<button data-testid='btntag' type='submit'>
 						Submit
 					</button>
