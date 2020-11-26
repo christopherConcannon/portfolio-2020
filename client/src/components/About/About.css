@@ -29,9 +29,9 @@
 .About-content p {
 	font-family: var(--body-text);
 	width: 70%;
-	text-align: right;
+	/* text-align: right; */
 	margin: 0 auto;
-	line-height: 1.7;
+	line-height: 1.9;
 }
 
 .About-portrait {

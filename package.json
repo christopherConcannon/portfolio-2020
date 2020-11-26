@@ -4,6 +4,7 @@
   "description": "![MIT license badge](https://img.shields.io/badge/license-MIT-green)",
   "main": "server/server.js",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "if-env": "^1.0.4",
     "react-transition-group": "^4.4.1"
   },

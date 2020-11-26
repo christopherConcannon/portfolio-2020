@@ -10,7 +10,7 @@ router.post('/send', (req, res, next) => {
 
 	const mail = {
 		from    : name,
-		// to: 'xocon10@gmail.com', 
+		// to: 'xocon10@gmail.com',
 		to      : process.env.USER, // Change to email address that you want to receive messages on
 		subject : 'New Message from Contact Form',
 		text    : content
@@ -45,5 +45,4 @@ router.post('/send', (req, res, next) => {
 	})
 })
 
-module.exports = router;
-
+module.exports = router

@@ -1,6 +1,6 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './SocialLinks.css';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './SocialLinks.css'
 
 const socialLinks = [
 	{
@@ -18,17 +18,25 @@ const socialLinks = [
 	// {
 	// 	url      : 'https://stackexchange.com/users/18248282/christopher-c',
 	// 	iconName : 'stack-overflow'
-	// }
-];
+	// },
+	{
+	  url: 'mailto:xtophe@christopherconcannon.com',
+	  iconName: 'envelope'
+	}
+]
 
 function SocialLinks() {
-	return socialLinks.map((link) => (
-		<li key={link.iconName} className="SocialLink">
-			<a href={link.url} target="blank" rel="noopener noreferrer">
-				<FontAwesomeIcon icon={[ 'fab', `${link.iconName}` ]} />
-			</a>
-		</li>
-	));
+	return (
+		<React.Fragment>
+			{socialLinks.map((link) => (
+				<li key={link.iconName} className='SocialLink'>
+					<a href={link.url} target='blank' rel='noopener noreferrer'>
+						<FontAwesomeIcon icon={link.iconName === 'envelope' ? 'envelope' : [ 'fab', `${link.iconName}` ]} />
+					</a>
+				</li>
+			))}
+		</React.Fragment>
+	)
 }
 
-export default SocialLinks;
+export default SocialLinks
