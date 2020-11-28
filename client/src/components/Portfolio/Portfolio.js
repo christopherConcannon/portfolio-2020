@@ -1,55 +1,9 @@
 import React, { useState } from 'react';
 import Project from '../Project/Project';
+import { projects } from '../../data'
 import './Portfolio.css';
 
 function Portfolio() {
-	const [ projects ] = useState([
-    {
-			title   : 'Buskr',
-			imgName : 'buskr.jpg',
-			projURL :
-				'https://polar-headland-24294.herokuapp.com/',
-			repoURL : 'https://github.com/jessicajernigan/dreamteam_project3',
-			techs   : 'MERN, GraphQL, Apollo'
-		},
-		{
-			title   : 'Instartist',
-			imgName : 'instartist.jpg',
-			projURL : 'https://instartist.herokuapp.com/',
-			repoURL : 'https://github.com/christopherConcannon/instartist',
-			techs   : 'Express.js, Handlebars, Sequelize'
-		},
-		{
-			title   : 'Call It A Night',
-			imgName : 'call-it-a-night-screenshot.jpg',
-			projURL : 'https://christopherconcannon.github.io/call-it-a-night/',
-			repoURL : 'https://github.com/christopherConcannon/call-it-a-night',
-			techs   : 'Javascript, AJAX'
-		},
-		{
-			title   : 'Employee Database',
-			imgName : 'employee-database.jpg',
-			projURL :
-				'https://drive.google.com/file/d/1IP-UqG3k2mjywhdTtKAODVVYG2ul6H9X/view',
-			repoURL : 'https://github.com/christopherConcannon/employee-database',
-			techs   : 'Node.js, MySQL'
-		},
-		{
-			title   : 'Dev Connector',
-			imgName : 'dev-connector.jpg',
-			projURL : 'https://rocky-sierra-41169.herokuapp.com/',
-			repoURL : 'https://github.com/christopherConcannon/devConnector',
-			techs   : 'MERN Stack'
-		},
-		{
-			title   : 'Yelp Camp',
-			imgName : 'yelp-camp.jpg',
-			projURL : 'https://whispering-shelf-69508.herokuapp.com/',
-			repoURL : 'https://github.com/christopherConcannon/yelp-camp',
-			techs   : 'Node.js, Express, EJS'
-		}
-	]);
-
 	return (
 		<section id="look-see" className="Portfolio">
 			<div className="container">

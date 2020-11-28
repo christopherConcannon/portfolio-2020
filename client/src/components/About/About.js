@@ -36,8 +36,7 @@ function About() {
 					with skills and research habits well-suited to interface with technology through
 					language constructs such as vocabulary, syntax, and semantics. I combine
 					Node-powered data-driven back-end solutions with modern React tools on the
-					front-end to deliver effective, visually attractive products. I look forward to
-					finding my role in a team focused on providing superior web experiences.
+					front-end to deliver effective, visually attractive products. 
 				</p>
 			</div>
 		</section>

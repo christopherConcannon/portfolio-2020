@@ -1,10 +1,9 @@
 .About {
-	/* height: 70vh; */
-	height: 100vh;
+	/* height: 100vh; */
 	background: #fff;
 	display: flex;
 	align-items: center;
-	/* margin-top: 5rem; */
+	margin: 5rem 0;
 }
 
 .About-title {
@@ -31,7 +30,7 @@
 	width: 70%;
 	/* text-align: right; */
 	margin: 0 auto;
-	line-height: 1.9;
+	line-height: 2.1;
 }
 
 .About-portrait {
