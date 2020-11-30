@@ -2,7 +2,7 @@
 
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
-![Portfolio 2020](./src/assets/images/screenshot.png)
+![Portfolio 2020](./client/src/assets/images/screenshot.png)
 
 [Visit Site](https://christopher-concannon.herokuapp.com/)
 
