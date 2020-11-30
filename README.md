@@ -2,6 +2,9 @@
 
 ![MIT license badge](https://img.shields.io/badge/license-MIT-green)
 
+## Description
+Portfolio of web developing work by Christopher Concannon, built with React.js
+
 ##### Homescreen
 ![Homescreen Screenshot](./assets/images/screenshot.png)
 ##### About Me View
@@ -13,12 +16,6 @@
 
 
 [Visit Site](https://christopher-concannon.herokuapp.com/)
-
-
-
-## Description
-
-Portfolio of web developing work by Christopher Concannon, built with React.js
 
 ## Table of Contents
   * [Installation](#installation)
