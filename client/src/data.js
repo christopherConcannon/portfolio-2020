@@ -25,18 +25,18 @@ export const projects = [
     techs   : 'Javascript, AJAX'
   },
   {
-    title   : 'Employee Database',
-    imgName : 'employee-database.jpg',
+    title   : 'Naif',
+    imgName : 'naif.jpg',
     projURL :
-      'https://drive.google.com/file/d/1IP-UqG3k2mjywhdTtKAODVVYG2ul6H9X/view',
-    repoURL : 'https://github.com/christopherConcannon/employee-database',
-    description: "A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL",
-    techs   : 'Node.js, MySQL'
+      'https://naif-xo.herokuapp.com/',
+    repoURL : 'https://github.com/christopherConcannon/naif',
+    description: "A modern end-to-end, e-commerce application to sell Culinary knifeware, built with the MERN Stack and Redux. Features CMS-style admin database control and PayPal payment integration.",
+    techs   : 'MERN Stack, Redux, AWS S3'
   },
   {
     title   : 'Dev Connector',
     imgName : 'dev-connector.jpg',
-    projURL : 'https://rocky-sierra-41169.herokuapp.com/',
+    projURL : 'https://dev-connector-xo.herokuapp.com/',
     repoURL : 'https://github.com/christopherConcannon/devConnector',
     description: 'A social network for developers. A pedagogical application built with the MERN stack allowing user to create a developer profile/portfolio, share posts and get help from other developers',
     techs   : 'MERN Stack'
@@ -52,7 +52,7 @@ export const projects = [
   // {
   // 	title   : 'Yelp Camp',
   // 	imgName : 'yelp-camp.jpg',
-  // 	projURL : 'https://whispering-shelf-69508.herokuapp.com/',
+  // 	projURL : 'https://yelp-camp-xo.herokuapp.com/',
   //   repoURL : 'https://github.com/christopherConcannon/yelp-camp',
   //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veniam repellendus dicta consectetur voluptas facere?',
   // 	techs   : 'Node.js, Express, EJS'
