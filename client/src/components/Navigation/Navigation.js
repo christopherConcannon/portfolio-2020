@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navigation.css';
 
@@ -12,11 +12,11 @@ function Navigation({ setCurrentPage }) {
 	};
 
 	const [ checked, setChecked ] = useState(false);
-	const checkbox = document.querySelector('.Navigation-toggler');
+  const checkboxRef = useRef()
 
 	useEffect(() => {
-		if (checkbox) {
-			checkbox.checked = checked;
+		if (checkboxRef) {
+			checkboxRef.current.checked = checked;
 		}
   });
   
@@ -56,7 +56,8 @@ function Navigation({ setCurrentPage }) {
 						// depends on previous state so use callback syntax
 						// onClick={() => setChecked(prev => !prev)}
 						type="checkbox"
-						className="Navigation-toggler"
+            className="Navigation-toggler"
+            ref={checkboxRef}
 					/>
 					<div className="Navigation-hamburger">
 						<div />

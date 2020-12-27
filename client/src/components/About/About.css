@@ -38,23 +38,32 @@
 	height: 10rem;
 	border-radius: 50%;
 	filter: grayscale(100%);
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* MOBILE STYLES */
-@media screen and (max-width: 768px) {
-	.About {
-		/* height: 70vh; */
-		height: 50vh;
-	}
+@media screen and (max-width: 1200px) {
+  .Contact-wrapper {
+    flex-direction: column
+  }
 
+  .Contact-details {
+    margin-bottom: 3rem;
+  }
+} 
+
+@media screen and (max-width: 768px) {
 	.About-title {
 		font-size: 2rem;
 	}
 
 	.About-content p {
 		font-size: .8rem;
-	}
+  }
+  
+  .active {
+    background-position: 0px calc(100% - .4em) !important;
+  }
 }
 
 @media screen and (max-width: 576px) {
